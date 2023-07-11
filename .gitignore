@@ -1,0 +1,8 @@
+.qmake*
+Makefile*
+GuiLib/debug/
+GuiLib/release/
+GuiLib/Makefile*
+DesktopLauncher/debug/
+DesktopLauncher/release/
+DesktopLauncher/Makefile*
