@@ -13,11 +13,13 @@ CONFIG += c++11
 
 SOURCES += \
     explorerform.cpp \
+    linkwidget.cpp \
     mainform.cpp
 
 HEADERS += \
     GuiLib_global.h \
     explorerform.h \
+    linkwidget.h \
     mainform.h
 
 # Default rules for deployment.
