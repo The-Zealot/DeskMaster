@@ -3,6 +3,9 @@ Makefile*
 GuiLib/debug/
 GuiLib/release/
 GuiLib/Makefile*
+LogicLib/debug/
+LogicLib/release/
+LogicLib/Makefile*
 DesktopLauncher/debug/
 DesktopLauncher/release/
 DesktopLauncher/Makefile*

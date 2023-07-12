@@ -3,4 +3,5 @@ TEMPLATE = subdirs
 SUBDIRS += \
     DesktopLauncher \
     DesktopLauncher \
-    GuiLib
+    GuiLib \
+    LogicLib
