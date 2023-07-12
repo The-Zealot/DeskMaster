@@ -18,6 +18,8 @@ public:
     explicit ExplorerForm(QWidget *parent = nullptr);
     ~ExplorerForm();
 
+    void setLinks(const QList<LinkWidget*> &list);
+
 private:
     Ui::ExplorerForm *ui;
 };

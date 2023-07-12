@@ -10,9 +10,6 @@ int main(int argc, char *argv[])
 
     qDebug() << "Application build number:" << APP_BUILD;
 
-//    MainForm mainForm;
-//    mainForm.show();
-
     ExplorerForm ef;
     ef.show();
 

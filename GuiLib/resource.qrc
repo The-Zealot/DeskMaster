@@ -1,17 +1,17 @@
 <RCC>
     <qresource prefix="/icons/folders">
-        <file alias="black">icons/folders/Folder-black64.png</file>
-        <file alias="folder_blue">icons/folders/Folder-blue64.png</file>
-        <file alias="folder_brown">icons/folders/Folder-brown64.png</file>
-        <file alias="folder_default">icons/folders/Folder-default64.png</file>
-        <file alias="folder_green">icons/folders/Folder-green64.png</file>
-        <file alias="folder_indigo">icons/folders/Folder-indigo64.png</file>
-        <file alias="folder_lime">icons/folders/Folder-lime64.png</file>
-        <file alias="folder_magenta">icons/folders/Folder-magenta64.png</file>
-        <file alias="folder_orange">icons/folders/Folder-orange64.png</file>
-        <file alias="folder_pink">icons/folders/Folder-pink64.png</file>
-        <file alias="folder_purple">icons/folders/Folder-purple64.png</file>
-        <file alias="folder_red">icons/folders/Folder-red64.png</file>
+        <file alias="black.png">icons/folders/Folder-black64.png</file>
+        <file alias="blue.png">icons/folders/Folder-blue64.png</file>
+        <file alias="brown.png">icons/folders/Folder-brown64.png</file>
+        <file alias="default.png">icons/folders/Folder-default64.png</file>
+        <file alias="green.png">icons/folders/Folder-green64.png</file>
+        <file alias="indigo.png">icons/folders/Folder-indigo64.png</file>
+        <file alias="lime.png">icons/folders/Folder-lime64.png</file>
+        <file alias="magenta.png">icons/folders/Folder-magenta64.png</file>
+        <file alias="orange.png">icons/folders/Folder-orange64.png</file>
+        <file alias="pink.png">icons/folders/Folder-pink64.png</file>
+        <file alias="purple.png">icons/folders/Folder-purple64.png</file>
+        <file alias="red.png">icons/folders/Folder-red64.png</file>
         <file alias="white.png">icons/folders/Folder-white64.png</file>
     </qresource>
 </RCC>
