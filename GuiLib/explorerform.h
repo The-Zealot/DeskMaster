@@ -4,6 +4,7 @@
 #include <QWidget>
 
 #include "GuiLib_global.h"
+#include "linkwidget.h"
 
 namespace Ui {
 class ExplorerForm;

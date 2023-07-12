@@ -31,3 +31,21 @@ unix {
 FORMS += \
     explorerform.ui \
     mainform.ui
+
+DISTFILES += \
+    icons/folders/Folder-black64.png \
+    icons/folders/Folder-blue64.png \
+    icons/folders/Folder-brown64.png \
+    icons/folders/Folder-default64.png \
+    icons/folders/Folder-green64.png \
+    icons/folders/Folder-indigo64.png \
+    icons/folders/Folder-lime64.png \
+    icons/folders/Folder-magenta64.png \
+    icons/folders/Folder-orange64.png \
+    icons/folders/Folder-pink64.png \
+    icons/folders/Folder-purple64.png \
+    icons/folders/Folder-red64.png \
+    icons/folders/Folder-white64.png
+
+RESOURCES += \
+    resource.qrc
