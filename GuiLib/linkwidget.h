@@ -12,13 +12,6 @@ class GUILIB_EXPORT LinkWidget : public QWidget
 {
     Q_OBJECT
 
-    enum LinkType
-    {
-        Empty = 0,
-        Folder,
-        File,
-    };
-
 public:
     explicit LinkWidget(QWidget *parent = nullptr);
 
@@ -37,8 +30,6 @@ private:
     QVBoxLayout *_layout;
 
     QString _path;
-
-    LinkType _type;
 };
 
 #endif // LINKWIDGET_H

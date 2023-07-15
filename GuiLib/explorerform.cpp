@@ -4,33 +4,31 @@
 #include <QFileIconProvider>
 #include <QFileInfo>
 
-ExplorerForm::ExplorerForm(QWidget *parent) :
+ExplorerForm::ExplorerForm(QRect rect, const QString &title, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ExplorerForm)
 {
     ui->setupUi(this);
 
 //    this->setWindowFlags(Qt::WindowStaysOnBottomHint);
+    this->setGeometry(rect);
+    this->setWindowTitle(title);
 
-    QGridLayout* grid = qobject_cast<QGridLayout*>(ui->scrollAreaWidgetContents->layout());
-
-    for (int i = 0, x = 0, y = 0; i < 70; i++)
+    for (int i = 0; i < 68; i++)
     {
-        LinkWidget *link = new LinkWidget(this);
-        if ((x + 1) * link->width() > this->width())
-        {
-            y++;
-            x = 0;
-        }
-        grid->addWidget(link, y, x);
-        link->setLabel("New folder " + QVariant(i + 1).toString());
-        link->show();
-//        link->setIcon(QIcon(":/icons/folders/white.png"));
-//        link->setIcon(QFileIconProvider().icon(QFileInfo("D:\\Games\\Diablo 2\\Diablo 2.exe")));
-        link->setIcon(QIcon("D:\\Games\\Diablo 2\\thumbs_lod34.ico"));
-
-        x++;
+        LinkWidget* linkWidget = new LinkWidget();
+        linkWidget->setLabel("New link " + QVariant(i + 1).toString());
+        linkWidget->setIcon(QIcon("D:\\Games\\Diablo 2\\thumbs_lod34.ico"));
+        list.append(linkWidget);
     }
+
+    drawLinks();
+
+    connect(this, &ExplorerForm::resized, this, &ExplorerForm::drawLinks);
+
+//  link->setIcon(QIcon(":/icons/folders/white.png"));
+//  link->setIcon(QFileIconProvider().icon(QFileInfo("D:\\Games\\Diablo 2\\Diablo 2.exe")));
+//  link->setIcon(QIcon("D:\\Games\\Diablo 2\\thumbs_lod34.ico"));
 }
 
 ExplorerForm::~ExplorerForm()
@@ -38,11 +36,28 @@ ExplorerForm::~ExplorerForm()
     delete ui;
 }
 
-void ExplorerForm::setLinks(const QList<LinkWidget *> &list)
+void ExplorerForm::drawLinks()
 {
-    /*int x = 0, y = 0;
+    QGridLayout* grid = qobject_cast<QGridLayout*>(ui->scrollAreaWidgetContents->layout());
+    int h_spasing = grid->horizontalSpacing();
+
+    int x = 0, y = 0;
     for (auto iter : list)
     {
+        if ((x + 1) * (iter->width() + h_spasing * 1.5) > this->width())
+        {
+            y++;
+            x = 0;
+        }
+        grid->addWidget(iter, y, x);
+        grid->setColumnStretch(x, iter->width() + h_spasing * 1.5);
+        iter->show();
 
-    }*/
+        x++;
+    }
+}
+
+void ExplorerForm::resizeEvent(QResizeEvent *event)
+{
+    emit resized();
 }

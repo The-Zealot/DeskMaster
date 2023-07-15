@@ -20,11 +20,10 @@ LinkWidget::LinkWidget(QWidget *parent) : QWidget(parent)
 
     _button->setSizePolicy(QSizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding));
     _labelName->setSizePolicy(QSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed));
+    this->setSizePolicy(QSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed));
 
     _labelName->show();
     _button->show();
-
-    _type = Empty;
 }
 
 void LinkWidget::setLabel(const QString &name)
