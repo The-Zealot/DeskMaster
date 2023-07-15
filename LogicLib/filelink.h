@@ -3,9 +3,10 @@
 
 #include <QProcess>
 
+#include "LogicLib_global.h"
 #include "abstractlink.h"
 
-class FileLink : public AbstractLink
+class LOGICLIB_EXPORT FileLink : public AbstractLink
 {
     Q_OBJECT
 public:

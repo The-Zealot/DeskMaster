@@ -3,10 +3,11 @@
 
 #include <QObject>
 
+#include "LogicLib_global.h"
 #include "linkfactory.h"
 #include "folderlink.h"
 
-class FolderLinkFactory : public ILinkFactory
+class LOGICLIB_EXPORT FolderLinkFactory : public ILinkFactory
 {
     Q_OBJECT
 public:

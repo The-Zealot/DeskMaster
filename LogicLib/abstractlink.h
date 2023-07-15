@@ -3,7 +3,9 @@
 
 #include <QObject>
 
-class AbstractLink : public QObject
+#include "LogicLib_global.h"
+
+class LOGICLIB_EXPORT AbstractLink : public QObject
 {
     Q_OBJECT
 public:
