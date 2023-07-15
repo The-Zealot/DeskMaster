@@ -9,7 +9,6 @@
 
 class LOGICLIB_EXPORT FileLinkFactory : public ILinkFactory
 {
-    Q_OBJECT
 public:
     FileLinkFactory();
 

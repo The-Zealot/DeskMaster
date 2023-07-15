@@ -19,8 +19,6 @@ public:
 public slots:
     virtual void open() = 0;
 
-signals:
-
 protected:
     QString _name;
     QString _path;
