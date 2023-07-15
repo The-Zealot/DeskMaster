@@ -1,4 +1,5 @@
 QT -= gui
+QT += core
 
 TEMPLATE = lib
 DEFINES += LOGICLIB_LIBRARY
@@ -10,11 +11,15 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    abstractlink.cpp
+    abstractlink.cpp \
+    filelink.cpp \
+    folderlink.cpp
 
 HEADERS += \
     LogicLib_global.h \
-    abstractlink.h
+    abstractlink.h \
+    filelink.h \
+    folderlink.h
 
 # Default rules for deployment.
 unix {
