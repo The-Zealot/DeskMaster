@@ -13,13 +13,18 @@ CONFIG += c++11
 SOURCES += \
     abstractlink.cpp \
     filelink.cpp \
-    folderlink.cpp
+    filelinkfactory.cpp \
+    folderlink.cpp \
+    folderlinkfactory.cpp
 
 HEADERS += \
     LogicLib_global.h \
     abstractlink.h \
     filelink.h \
-    folderlink.h
+    filelinkfactory.h \
+    folderlink.h \
+    folderlinkfactory.h \
+    linkfactory.h
 
 # Default rules for deployment.
 unix {
