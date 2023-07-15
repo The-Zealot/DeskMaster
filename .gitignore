@@ -6,6 +6,7 @@ GuiLib/Makefile*
 LogicLib/debug/
 LogicLib/release/
 LogicLib/Makefile*
+LogicLib/object_script*
 DesktopLauncher/debug/
 DesktopLauncher/release/
 DesktopLauncher/Makefile*

@@ -24,6 +24,7 @@ HEADERS += \
     filelinkfactory.h \
     folderlink.h \
     folderlinkfactory.h \
+    iextractor.h \
     linkfactory.h
 
 # Default rules for deployment.
