@@ -4,6 +4,7 @@
 #include <QWidget>
 
 #include "GuiLib_global.h"
+#include <xmlmanager.h>
 
 namespace Ui {
 class MainForm;

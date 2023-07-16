@@ -13,5 +13,7 @@ int main(int argc, char *argv[])
     ExplorerForm ef;
     ef.show();
 
+    MainForm form;
+
     return a.exec();
 }

@@ -7,7 +7,7 @@
 class LOGICLIB_EXPORT ILinkFactory
 {
 public:
-    virtual AbstractLink *create(const QString &name, const QString &path) = 0;
+    virtual AbstractLink *create(const QString &name = "", const QString &path = "") = 0;
 };
 
 #endif // LINKFACTORY_H

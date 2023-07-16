@@ -1,12 +1,12 @@
 #ifndef IEXTRACTOR_H
 #define IEXTRACTOR_H
 
-#include <QObject>
+#include "LogicLib_global.h"
 
-class IExtractor
+class LOGICLIB_EXPORT IExtractor
 {
 public:
-    virtual void extract(const QString &filename) = 0;
+    virtual bool extract(const QString &filename) = 0;
 };
 
 #endif // IEXTRACTOR_H

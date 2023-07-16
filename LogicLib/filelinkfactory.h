@@ -12,7 +12,6 @@ class LOGICLIB_EXPORT FileLinkFactory : public ILinkFactory
 public:
     FileLinkFactory();
 
-public:
     AbstractLink *create(const QString &name, const QString &path) override;
 };
 

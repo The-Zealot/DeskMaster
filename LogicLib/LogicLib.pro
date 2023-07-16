@@ -15,7 +15,8 @@ SOURCES += \
     filelink.cpp \
     filelinkfactory.cpp \
     folderlink.cpp \
-    folderlinkfactory.cpp
+    folderlinkfactory.cpp \
+    xmlmanager.cpp
 
 HEADERS += \
     LogicLib_global.h \
@@ -25,7 +26,9 @@ HEADERS += \
     folderlink.h \
     folderlinkfactory.h \
     iextractor.h \
-    linkfactory.h
+    ipackager.h \
+    linkfactory.h \
+    xmlmanager.h
 
 # Default rules for deployment.
 unix {

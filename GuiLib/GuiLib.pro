@@ -49,3 +49,10 @@ DISTFILES += \
 
 RESOURCES += \
     resource.qrc
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../LogicLib/release/ -lLogicLib
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../LogicLib/debug/ -lLogicLib
+else:unix: LIBS += -L$$OUT_PWD/../LogicLib/ -lLogicLib
+
+INCLUDEPATH += $$PWD/../LogicLib
+DEPENDPATH += $$PWD/../LogicLib
